@@ -44,14 +44,15 @@ function ResponsiveAppBar() {
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'Arial',
+              fontFamily:"sans-serif",
               fontWeight: 700,
-              letterSpacing: '.2rem',
+              letterSpacing: '.1rem',
               color: 'black',
+              opacity:'70%',
               textDecoration: 'none',
             }}
           >
-            manju.dev
+            Manju.dev
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -100,14 +101,14 @@ function ResponsiveAppBar() {
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-              fontFamily: 'Arial',
+              fontFamily:"sans-serif",
               fontWeight: 700,
-              letterSpacing: '.1rem',
+              // letterSpacing: '.1rem',
               color: 'black',
               textDecoration: 'none',
             }}
           >
-             manju.dev
+             Manju.dev
           </Typography>
           <Box sx={{ flexGrow: 2, display: { xs: 'none', md: 'flex'} }}>
             {pages.map((page) => (

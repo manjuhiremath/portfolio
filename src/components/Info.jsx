@@ -1,6 +1,6 @@
 // import  Box  from "@mui/material";
 // import Item from "@mui/material";
-import manjuImage from "../assets/profile.jpeg"; // Make sure to adjust the path accordingly
+import manjuImage from "../assets/profile.png"; // Make sure to adjust the path accordingly
 import hilogo from "../assets/hilogo.png";
 import "./info.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -63,7 +63,7 @@ function Info() {
       </div>
 
       <div className="col col2">
-        <div className="info">
+        <div className="info bg-black">
           <div className="info1 border-solid border-zinc-950">
             <img
               style={{ width: "100%", height: "100%" }}
