@@ -31,6 +31,7 @@ function Cards() {
           name="Password Generator"
           githublink="https://github.com/manjuhiremath/passgenerator"
           tech="ReactJs,TailwindCSS"
+          disabled='true'
         />
       </div>
     </div>

@@ -8,7 +8,7 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 
 import MenuItem from '@mui/material/MenuItem';
 
@@ -40,7 +40,7 @@ function ResponsiveAppBar() {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            // href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -96,7 +96,7 @@ function ResponsiveAppBar() {
             variant="h5"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            // href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -110,7 +110,7 @@ function ResponsiveAppBar() {
           >
              Manju.dev
           </Typography>
-          <Box sx={{ flexGrow: 2, display: { xs: 'none', md: 'flex'} }}>
+          {/* <Box sx={{ flexGrow: 2, display: { xs: 'none', md: 'flex'} }}>
             {pages.map((page) => (
               <Button
                 key={page}
@@ -120,7 +120,7 @@ function ResponsiveAppBar() {
                 {page}
               </Button>
             ))}
-          </Box>
+          </Box> */}
 
           
         </Toolbar>

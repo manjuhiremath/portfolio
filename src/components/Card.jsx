@@ -42,6 +42,7 @@ export default function BasicCard(props) {
           variant="solid"
           size="md"
           color="primary"
+          disabled={props.disabled}
           aria-label="Explore Bahamas Islands"
           sx={{alignSelf: 'center', fontWeight: 600 }}
         >

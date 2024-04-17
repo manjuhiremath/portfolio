@@ -5,6 +5,9 @@ import hilogo from "../assets/hilogo.png";
 import "./info.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import ButtonGroup from "@mui/material/ButtonGroup";
+import Button from "@mui/material/Button";
+import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
 
 function Info() {
   return (
@@ -22,7 +25,7 @@ function Info() {
           }}
           className=""
         >
-          Hi, I'm Manju
+          Hi, I'm Manju 
           <img
             style={{
               width: "50px",
@@ -53,12 +56,26 @@ function Info() {
         </h1>
 
         <div className="flex mt-4">
-          <a href="https://github.com/manjuhiremath">
-            <GitHubIcon sx={{ fontSize: 30 }} />
-          </a>
-          <a href="https://www.linkedin.com/in/manju-hiremath/">
-            <LinkedInIcon sx={{ fontSize: 33, marginLeft: "10px" }} />
-          </a>
+          <ButtonGroup variant="outlined" aria-label="Basic button group">
+            <a href="https://github.com/manjuhiremath">
+              <Button color="secondary">
+                <GitHubIcon sx={{ fontSize: 25 }} />
+              </Button>
+            </a>
+            <a href="https://www.linkedin.com/in/manju-hiremath/">
+              <Button color="primary">
+                {" "}
+                <LinkedInIcon sx={{ fontSize: 25 }} />
+              </Button>
+            </a>
+            <a href="https://drive.google.com/file/d/1__mxy-0TJ7_4MD0qGwHcZ_rRB2LssJr7/view?usp=sharing">
+              <Button color="success" font= 'medium'>
+                <p>Resume</p>
+                <DownloadRoundedIcon sx={{ fontSize: 25 }} />
+              </Button>
+             
+            </a>
+          </ButtonGroup>
         </div>
       </div>
 
