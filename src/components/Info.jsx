@@ -81,9 +81,9 @@ function Info() {
 
       <div className="col col2">
         <div className="info bg-black">
-          <div className="info1 border-solid border-zinc-950">
+          <div className="info1 border-solid border-zinc-950"  style={{ width: '100%', height: '100%', position: 'relative' }}>
             <img
-              style={{ width: "100%", height: "100%" }}
+               style={{ objectFit: 'cover', width: '125%', height: '130%', position: 'relative',top:"-8%"}}
               src={manjuImage}
               alt="Manju"
             />

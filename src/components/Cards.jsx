@@ -2,11 +2,14 @@
 import BasicCard from "./Card";
 import "./Cards.css";
 import Cloud from "../assets/cloud.png";
+import Foodi from "../assets/foodi.png";
+import Pass from "../assets/pass.png";
 import TaskTracker from "../assets/tasktracker.png";
 // import Divider from '@mui/material';
 
 function Cards() {
   return (
+    <div>
     <div className="containers gap-5 mt-14">
       <div>
         <BasicCard
@@ -27,14 +30,28 @@ function Cards() {
         />
       </div>
       <div>
-        <BasicCard
-          name="Password Generator"
-          githublink="https://github.com/manjuhiremath/passgenerator"
-          tech="ReactJs,TailwindCSS"
-          disabled='true'
-        />
-      </div>
+      <BasicCard
+        name="Password Generator"
+        githublink="https://github.com/manjuhiremath/passgenerator"
+        websitelink="https://passgenerator-ashen-xi.vercel.app/"
+        img={Pass}
+        tech="ReactJs,Tailwindcss,Javascript"
+      />
     </div>
+    </div>
+    <div className="containers gap-5 mt-5">
+    <div>
+      <BasicCard
+        name="Foodi"
+        githublink="https://github.com/manjuhiremath/Neuronexa"
+        websitelink="https://manjuhiremath.github.io/Neuronexa/"
+        img={Foodi}
+        tech="ReactJs,css"
+      />
+    </div>
+
+    </div>
+  </div>
   );
 }
 
