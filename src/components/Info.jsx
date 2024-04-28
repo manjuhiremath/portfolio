@@ -1,6 +1,6 @@
 // import  Box  from "@mui/material";
 // import Item from "@mui/material";
-import manjuImage from "../assets/profile.png"; // Make sure to adjust the path accordingly
+import manjuImage from "../assets/profile-pic.png"; // Make sure to adjust the path accordingly
 import hilogo from "../assets/hilogo.png";
 import "./info.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
