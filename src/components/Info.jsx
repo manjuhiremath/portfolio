@@ -12,7 +12,7 @@ import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
 function Info() {
   return (
     <section className="column-center">
-      <div style={{ marginLeft: "5px", marginRight:'5px'}} className="col col1 ">
+      <div style={{ marginLeft: "10px", marginRight:'5px'}} className="col col1 ">
         <h1
           style={{
             fontSize: "3rem",
