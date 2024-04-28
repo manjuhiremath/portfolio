@@ -9,8 +9,8 @@ import TaskTracker from "../assets/tasktracker.png";
 
 function Cards() {
   return (
-    <div>
-    <div className="containers gap-5 mt-14">
+    <div >
+    <div className="containers gap-5 mt-14"  style={{background:'none'}}>
       <div>
         <BasicCard
           name="Cloud Files"
@@ -39,7 +39,7 @@ function Cards() {
       />
     </div>
     </div>
-    <div className="containers gap-5 mt-5">
+    <div className="containers gap-5 mt-5"   style={{background:'none'}}>
     <div>
       <BasicCard
         name="Foodi"

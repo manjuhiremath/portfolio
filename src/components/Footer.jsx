@@ -7,7 +7,7 @@ function Footer()  {
         <h1 style = {
             {
                 color: "white",
-                fontSize:"400"
+               
             }
         }
         >Copyright © 2024. All rights are reserved</h1>

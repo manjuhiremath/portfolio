@@ -13,9 +13,7 @@ function Homepage(){
         <div className="nav">
           <Nav color="white" shadow='true'/>
         </div>
-        <div className="intro" >
-          <Info />
-        </div>
+       
        
         <div style={{marginTop:'8rem'}}>
         <Divider style={{fontSize:'20px'}}> TECH STACK</Divider>
@@ -25,7 +23,7 @@ function Homepage(){
         <Divider style={{marginBottom:'2rem' , fontSize:'20px '}} > PROJECTS  </Divider>
           <Cards/>
         </div>
-        <div className="intro" >
+        <div className="foot" >
           <Footer />
         </div>
     </div>

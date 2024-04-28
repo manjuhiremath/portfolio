@@ -12,7 +12,7 @@ import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
 function Info() {
   return (
     <section className="column-center">
-      <div style={{ margin: "20px" }} className="col col1 ">
+      <div style={{ margin: "0px" }} className="col col1 ">
         <h1
           style={{
             fontSize: "3rem",
@@ -48,6 +48,7 @@ function Info() {
           style={{
             fontSize: "1.2rem",
             color: "#403e3e",
+            textAlign: "left",
           }}
           className="para mt-4"
         >
@@ -55,7 +56,11 @@ function Info() {
           <br /> based in Bengaluru, Karnataka, India. 📍
         </h1>
 
-        <div className="flex mt-4">
+        <div className="mt-4" style={{
+            // fontSize: "1.2rem",
+            // color: "#403e3e",
+            textAlign: "left",
+          }}>
           <ButtonGroup variant="outlined" aria-label="Basic button group">
             <a href="https://github.com/manjuhiremath">
               <Button color="secondary">
@@ -79,7 +84,7 @@ function Info() {
         </div>
       </div>
 
-      <div className="col col2">
+      <div className="maininfo col col2">
         <div className="info bg-black">
           <div className="info1 border-solid border-zinc-950"  style={{ width: '100%', height: '100%', position: 'relative' }}>
             <img
