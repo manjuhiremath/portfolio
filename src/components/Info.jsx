@@ -44,7 +44,7 @@ function Info() {
             textAlign: "left",
             color: "#333",
           }}>
-                I am &nbsp;
+                I'm a &nbsp;
                 <span className="fs-2 fw-bold text-3" style={{ color: "orange" }}>
                   <Typewriter
                     loop
