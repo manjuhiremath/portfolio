@@ -8,11 +8,15 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import Button from "@mui/material/Button";
 import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
+import Typewriter from "typewriter-effect";
 
 function Info() {
   return (
     <section className="column-center">
-      <div style={{ marginLeft: "10px", marginRight:'5px'}} className="col col1 ">
+      <div
+        style={{ marginLeft: "10px", marginRight: "20px" }}
+        className="col col1 "
+      >
         <h1
           style={{
             fontSize: "3rem",
@@ -25,7 +29,8 @@ function Info() {
           }}
           className=""
         >
-          Hi, I'm Manju 
+          Hi, I'm Manju
+
           <img
             style={{
               width: "50px",
@@ -42,7 +47,25 @@ function Info() {
             color: "#333",
           }}
         >
-          Front-End React Developer
+          <Typewriter
+            options={{
+              loop: true, // Set loop option to true
+            }}
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("<span>I'm a </span>")
+                .pauseFor(500)
+                .typeString("<span style='color:orange;'>Web Developer</span>")
+                .pauseFor(1000)
+                .deleteChars(13)
+                .typeString("<span style='color: orange;'>Freelancer</span>")
+                .pauseFor(1000)
+                .deleteChars(9, 19)
+                .start();
+            }}
+          />
+
+          {/* Front-End React Developer */}
         </h1>
         <h1
           style={{
@@ -56,11 +79,14 @@ function Info() {
           <br /> based in Bengaluru, Karnataka, India. 📍
         </h1>
 
-        <div className="mt-4" style={{
+        <div
+          className="mt-4"
+          style={{
             // fontSize: "1.2rem",
             // color: "#403e3e",
             textAlign: "left",
-          }}>
+          }}
+        >
           <ButtonGroup variant="outlined" aria-label="Basic button group">
             <a href="https://github.com/manjuhiremath">
               <Button color="secondary">
@@ -74,21 +100,29 @@ function Info() {
               </Button>
             </a>
             <a href="https://drive.google.com/file/d/1__mxy-0TJ7_4MD0qGwHcZ_rRB2LssJr7/view?usp=sharing">
-              <Button color="success" font= 'medium'>
+              <Button color="success" font="medium">
                 <p>Resume</p>
                 <DownloadRoundedIcon sx={{ fontSize: 25 }} />
               </Button>
-             
             </a>
           </ButtonGroup>
         </div>
       </div>
 
-      <div className="maininfo col col2">
+      <div className="maininfo col col2 ml-4">
         <div className="info bg-black">
-          <div className="info1 border-solid border-zinc-950"  style={{ width: '100%', height: '100%', position: 'relative' }}>
+          <div
+            className="info1 border-solid border-zinc-950"
+            style={{ width: "100%", height: "100%", position: "relative" }}
+          >
             <img
-               style={{ objectFit: 'cover', width: '125%', height: '130%', position: 'relative',top:"-8%"}}
+              style={{
+                objectFit: "cover",
+                width: "125%",
+                height: "130%",
+                position: "relative",
+                top: "-8%",
+              }}
               src={manjuImage}
               alt="Manju"
             />

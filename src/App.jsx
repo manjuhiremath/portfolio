@@ -5,7 +5,7 @@ import Info from './components/Info';
 
 const App = () => {
   return (
-    <div className="main-container"> {/* Apply styling to the main container */}
+    <div className="main-container mt-3"> {/* Apply styling to the main container */}
       <div className="header">
         <div className="inner-header flex">
           <div className="intro" >
@@ -29,9 +29,9 @@ const App = () => {
               />
             </defs>
             <g className="parallax">
-              <use xlinkHref="#gentle-wave" x="48" y="0" fill="rgb(154, 200, 205)" />
-              <use xlinkHref="#gentle-wave" x="48" y="3" fill="rgb(14, 70, 163)" />
-              <use xlinkHref="#gentle-wave" x="48" y="5" fill="rgb(30, 3, 66)" />
+              <use xlinkHref="#gentle-wave" x="48" y="0" fill="rgb(131, 111, 255)" />
+              <use xlinkHref="#gentle-wave" x="48" y="3" fill="rgb(33, 25, 81)" />
+              <use xlinkHref="#gentle-wave" x="48" y="5" fill="rgb(21, 245, 186)" />
               <use xlinkHref="#gentle-wave" x="48" y="7" fill="#fff" />
             </g>
           </svg>
