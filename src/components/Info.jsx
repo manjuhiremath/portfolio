@@ -8,7 +8,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import Button from "@mui/material/Button";
 import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
-import Typewriter from "typewriter-effect";
+import { Typewriter } from "react-simple-typewriter";
 
 function Info() {
   return (
@@ -30,43 +30,33 @@ function Info() {
           className=""
         >
           Hi, I'm Manju
-
           <img
             style={{
               width: "50px",
+              marginTop: "-5px",
             }}
             src={hilogo}
           ></img>
         </h1>
-
-        <h1
-          style={{
+        <h1  style={{
             fontSize: "2rem",
             fontWeight: "bold",
             textAlign: "left",
             color: "#333",
-          }}
-        >
-          <Typewriter
-            options={{
-              loop: true, // Set loop option to true
-            }}
-            onInit={(typewriter) => {
-              typewriter
-                .typeString("<span>I'm a </span>")
-                .pauseFor(500)
-                .typeString("<span style='color:orange;'>Web Developer</span>")
-                .pauseFor(1000)
-                .deleteChars(13)
-                .typeString("<span style='color: orange;'>Freelancer</span>")
-                .pauseFor(1000)
-                .deleteChars(9, 19)
-                .start();
-            }}
-          />
-
-          {/* Front-End React Developer */}
-        </h1>
+          }}>
+                I am &nbsp;
+                <span className="fs-2 fw-bold text-3" style={{ color: "orange" }}>
+                  <Typewriter
+                    loop
+                    cursor
+                    cursorStyle="|"
+                    typeSpeed={100}
+                    deleteSpeed={70}
+                    delaySpeed={1000}
+                    words={["Developer","Freelancer"]}
+                  />
+                </span>
+              </h1>
         <h1
           style={{
             fontSize: "1.2rem",
@@ -121,7 +111,7 @@ function Info() {
                 width: "125%",
                 height: "130%",
                 position: "relative",
-                top: "-8%",
+                top: "-6%",
               }}
               src={manjuImage}
               alt="Manju"

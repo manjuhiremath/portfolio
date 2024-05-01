@@ -1,5 +1,5 @@
 import Nav from './Nav';
-import Info from './Info';
+// import Info from './Info';
 import InfiniteScroll from './TechStack';
 import Cards from './Cards';
 import Divider from '@mui/material/Divider';
