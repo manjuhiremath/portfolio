@@ -53,7 +53,7 @@ function Info() {
                     typeSpeed={100}
                     deleteSpeed={70}
                     delaySpeed={1000}
-                    words={["Developer","Freelancer"]}
+                    words={["Developer","Freelancer","Student"]}
                   />
                 </span>
               </h1>

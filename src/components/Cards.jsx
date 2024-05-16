@@ -3,6 +3,7 @@ import BasicCard from "./Card";
 import "./Cards.css";
 import Cloud from "../assets/cloud.png";
 import Foodi from "../assets/foodi.png";
+import Medi from '../assets/medi.png';
 import Pass from "../assets/pass.png";
 import TaskTracker from "../assets/tasktracker.png";
 // import Divider from '@mui/material';
@@ -47,6 +48,15 @@ function Cards() {
         websitelink="https://manjuhiremath.github.io/Neuronexa/"
         img={Foodi}
         tech="ReactJs,css"
+      />
+    </div>
+    <div>
+      <BasicCard
+        name="Mediblik"
+        githublink="https://github.com/manjuhiremath/medi"
+        websitelink="https://medi-lake.vercel.app/"
+        img={Medi}
+        tech="ReactJs,Firebase,Material Ui"
       />
     </div>
 

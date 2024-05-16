@@ -15,7 +15,7 @@ function Homepage(){
         </div>
        
        
-        <div style={{marginTop:'8rem'}}>
+        <div style={{marginTop:'3rem'}}>
         <Divider style={{fontSize:'20px'}}> TECH STACK</Divider>
           <InfiniteScroll/>
         </div>

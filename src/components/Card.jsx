@@ -13,11 +13,12 @@ function BasicCard({ name, tech, img, githublink, websitelink, disabled }) {
         <Typography level="title-lg">{name}</Typography>
         <Typography level="body-sm">{tech}</Typography>
       </div>
-      <AspectRatio minHeight="120px" maxHeight="200px">
+      <AspectRatio minHeight="100px" maxHeight="150px">
         <img
           src={img}
           loading="lazy"
           alt=""
+          style={{ width: '100%', height: '100%', objectFit: 'contain' }}
         />
       </AspectRatio>
       <CardContent orientation="horizontal">
