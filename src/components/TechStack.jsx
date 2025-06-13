@@ -3,8 +3,9 @@ import './TechStack.css';
 function TechStack() {
   const techItems = [
     "HTML", "CSS", "JavaScript", "ReactJS", 
-    "Java", "Python", "MySQL", "NodeJS",
-    "TypeScript", "Tailwind", "MongoDB", "Express"
+    "Java", "NextJs", "MySQL", "NodeJS",
+    "TypeScript", "Tailwind CSS", "MongoDB", "ExpressJS",
+     "Material UI",
   ];
 
   return (
