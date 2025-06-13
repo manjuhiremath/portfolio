@@ -81,7 +81,7 @@ function Info() {
 </div>
 
         <div
-          className="mt-4"
+          className="mt-4 px-4"
           style={{
             // fontSize: "1.2rem",
             // color: "#403e3e",
