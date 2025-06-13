@@ -1,74 +1,62 @@
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin-top: 1rem; */
-    height: 100px;
-    /* background: #ffffff; */
-    flex-direction: column;
+.tech-grid-container {
+  width: 100%;
+  padding: 2rem 0;
+  /* background: #f8f9fa; */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tech-grid-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.tech-grid-item {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  padding: 0.8rem 0.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.tech-grid-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  background: #f0f4ff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tech-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   }
   
-  .scroll {
-    position: relative;
-    display: flex;
-    width: 80%;
-    overflow: hidden;
-    -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+  .tech-grid-item {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-grid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 0.8rem;
   }
   
-  .scroll div {
-    white-space: nowrap;
-    animation: scroll var(--time) linear infinite;
-    animation-delay: calc(var(--time) * -1);
+  .tech-grid-title {
+    font-size: 1.5rem;
   }
-  
-  .scroll div:nth-child(2) {
-    animation: scroll2 var(--time) linear infinite;
-    animation-delay: calc(var(--time) / -2);
-  }
-  
-  @keyframes scroll {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-  
-  @keyframes scroll2 {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-200%);
-    }
-  }
-  
-  .scroll div span {
-    display: inline-flex;
-    margin: 10px;
-    letter-spacing: 0.2em;
-    background: #2b2b2b;
-    color: #ffffff;
-    padding: 5px 10px;
-    border-radius: 20px;
-    transition: 0.5s;
-  }
-  
-  .scroll div span:hover {
-    background: #ffffff;
-    cursor: pointer;
-  }
-  
-  .imgBox div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .imgBox img {
-    max-width: 100px;
-    scale: 0.8;
-  }
-  
+}

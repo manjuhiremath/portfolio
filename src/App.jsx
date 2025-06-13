@@ -13,7 +13,7 @@ const App = () => {
         </div>
          
         </div>
-        <div>
+        {/* <div>
           <svg
             className="waves"
             xmlns="http://www.w3.org/2000/svg"
@@ -35,8 +35,8 @@ const App = () => {
               <use xlinkHref="#gentle-wave" x="48" y="7" fill="#fff" />
             </g>
           </svg>
-        </div>
-      </div>
+        </div>*/}
+      </div> 
       <Homepage />
     </div>
   );

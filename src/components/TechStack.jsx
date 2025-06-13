@@ -1,34 +1,23 @@
+import './TechStack.css';
 
-import './TechStack.css'; // Import the CSS file
+function TechStack() {
+  const techItems = [
+    "HTML", "CSS", "JavaScript", "ReactJS", 
+    "Java", "Python", "MySQL", "NodeJS",
+    "TypeScript", "Tailwind", "MongoDB", "Express"
+  ];
 
-function InfiniteScroll() {
   return (
-    <div className="container">
-      <div className="scroll" style={{ '--time': '30s' }}>
-        <div>
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>ReactJS</span>
-          <span>Java</span>
-          <span>Python</span>
-          <span>My Sql</span>
-          <span>Node JS</span>
-        </div>
-        <div>
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>ReactJS</span>
-          <span>Java</span>
-          <span>Python</span>
-          <span>My Sql</span>
-          <span>Node JS</span>
-        </div>
+    <div className="tech-grid-container">
+      <div className="tech-grid flex flex-wrap justify-center items-center">
+        {techItems.map((tech, index) => (
+          <div key={index} className="tech-grid-item">
+            {tech}
+          </div>
+        ))}
       </div>
-      {/* Add other scroll elements with different styles */}
     </div>
   );
 }
 
-export default InfiniteScroll;
+export default TechStack;

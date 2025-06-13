@@ -1,6 +1,6 @@
 import Nav from './Nav';
 // import Info from './Info';
-import InfiniteScroll from './TechStack';
+import TechStack from './TechStack';
 import Cards from './Cards';
 import Divider from '@mui/material/Divider';
 import Footer from './Footer';
@@ -17,7 +17,7 @@ function Homepage(){
        
         <div style={{marginTop:'3rem'}}>
         <Divider style={{fontSize:'20px'}}> TECH STACK</Divider>
-          <InfiniteScroll/>
+          <TechStack/>
         </div>
         <div style={{marginTop:'3rem'}} className="cards">
         <Divider style={{marginBottom:'2rem' , fontSize:'20px '}} > PROJECTS  </Divider>

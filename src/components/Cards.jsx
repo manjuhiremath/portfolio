@@ -1,6 +1,7 @@
 // import React from 'react'
 import BasicCard from "./Card";
 import "./Cards.css";
+import vedims from "../assets/vedims.png";
 import Cloud from "../assets/cloud.png";
 import Foodi from "../assets/foodi.png";
 import Medi from '../assets/medi.png';
@@ -12,6 +13,15 @@ function Cards() {
   return (
     <div >
     <div className="containers gap-5 mt-14"  style={{background:'none'}}>
+            <div>
+        <BasicCard
+          name="Vedims (Ed-Tech)"
+          githublink=""
+          websitelink="https://vedims.com/"
+          img={vedims}
+          tech="ReactJs,Firebase"
+        />
+      </div>
       <div>
         <BasicCard
           name="Cloud Files"
@@ -50,7 +60,7 @@ function Cards() {
         tech="ReactJs,css"
       />
     </div>
-    <div>
+    {/* <div>
       <BasicCard
         name="Mediblik"
         githublink="https://github.com/manjuhiremath/medi"
@@ -58,7 +68,7 @@ function Cards() {
         img={Medi}
         tech="ReactJs,Firebase,Material Ui"
       />
-    </div>
+    </div> */}
 
     </div>
   </div>

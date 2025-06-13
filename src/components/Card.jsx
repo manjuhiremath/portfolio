@@ -22,17 +22,24 @@ function BasicCard({ name, tech, img, githublink, websitelink, disabled }) {
         />
       </AspectRatio>
       <CardContent orientation="horizontal">
-        <a href={githublink}>
-          <Button
-            variant="outlined"
-            size="md"
-            color="primary"
-            aria-label="Explore Bahamas Islands"
-            sx={{ alignSelf: 'center', fontWeight: 600 }}
-          >
-            GitHub
-          </Button>
-        </a>
+  <Button
+    variant="outlined"
+    size="md"
+     onClick={() => githublink && window.open(githublink, '_blank')}
+    className={githublink ? 'cursor-pointer' : ''}
+    color={githublink ? 'primary' : 'neutral'}
+    disabled={!githublink || disabled}
+    aria-label="Visit GitHub profile"
+    sx={{ 
+      alignSelf: 'center', 
+      fontWeight: 600,
+      '&:hover': {
+        textDecoration: 'none'
+      }
+    }}
+  >
+    GitHub
+  </Button>
         <a href={websitelink}>
           <Button
             variant="solid"

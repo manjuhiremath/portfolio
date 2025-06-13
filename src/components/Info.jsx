@@ -17,57 +17,68 @@ function Info() {
         style={{ marginLeft: "10px", marginRight: "20px" }}
         className="col col1 "
       >
-        <h1
-          style={{
-            fontSize: "3rem",
-            fontWeight: "bold",
-            textAlign: "left",
-
-            color: "#333",
-            display: "flex",
-            alignItems: "center",
-          }}
-          className=""
-        >
-          Hi, I'm Manju
-          <img
-            style={{
-              width: "50px",
-              marginTop: "-5px",
-            }}
-            src={hilogo}
-          ></img>
-        </h1>
-        <h1  style={{
-            fontSize: "2rem",
-            fontWeight: "bold",
-            textAlign: "left",
-            color: "#333",
-          }}>
-                I'm a &nbsp;
-                <span className="fs-2 fw-bold text-3" style={{ color: "orange" }}>
-                  <Typewriter
-                    loop
-                    cursor
-                    cursorStyle="|"
-                    typeSpeed={100}
-                    deleteSpeed={70}
-                    delaySpeed={1000}
-                    words={["Developer","Freelancer","Student"]}
-                  />
-                </span>
-              </h1>
-        <h1
-          style={{
-            fontSize: "1.2rem",
-            color: "#403e3e",
-            textAlign: "left",
-          }}
-          className="para mt-4"
-        >
-          A passionate Front-end React Developer
-          <br /> based in Bengaluru, Karnataka, India. 📍
-        </h1>
+       <div style={{ maxWidth: "800px", margin: "0 auto", padding: "0 1rem" }}>
+  <h1 style={{
+    fontSize: "clamp(2rem, 5vw, 3rem)",
+    fontWeight: 700,
+    textAlign: "left",
+    color: "#333",
+    display: "flex",
+    alignItems: "center",
+    gap: "0.5rem",
+    marginBottom: "0.5rem"
+  }}>
+    Hi, I'm Manju
+    <img
+      style={{
+        width: "clamp(40px, 4vw, 50px)",
+        height: "auto",
+        objectFit: "contain"
+      }}
+      src={hilogo}
+      alt="Hi emoji"
+    />
+  </h1>
+  
+  <h1 style={{
+    fontSize: "clamp(1.5rem, 4vw, 2rem)",
+    fontWeight: 700,
+    textAlign: "left",
+    color: "#333",
+    marginBottom: "1rem",
+    display: "flex",
+    flexWrap: "wrap",
+    alignItems: "center"
+  }}>
+    I'm a&nbsp;
+    <span style={{ 
+      color: "orange",
+      fontSize: "inherit",
+      fontWeight: "inherit"
+    }}>
+      <Typewriter
+        loop
+        cursor
+        cursorStyle="|"
+        typeSpeed={100}
+        deleteSpeed={70}
+        delaySpeed={1000}
+        words={["Developer", "Designer", "Tech Enthusiast"]}
+      />
+    </span>
+  </h1>
+  
+  <p style={{
+    fontSize: "clamp(1rem, 1.2vw, 1.2rem)",
+    color: "#403e3e",
+    textAlign: "left",
+    lineHeight: 1.6,
+    marginBottom: "2rem"
+  }}>
+    Full Stack MERN Developer specializing in end-to-end web development,
+    <br /> based in Bengaluru, Karnataka, India. 📍
+  </p>
+</div>
 
         <div
           className="mt-4"
