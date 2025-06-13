@@ -11,7 +11,7 @@ function BasicCard({ name, tech, img, githublink, websitelink, disabled }) {
     <Card sx={{ width: 320 }}>
       <div>
         <Typography level="title-lg">{name}</Typography>
-        <Typography level="body-sm">{tech}</Typography>
+        <Typography level="body-sm text-wrap">{tech}</Typography>
       </div>
       <AspectRatio minHeight="100px" maxHeight="150px">
         <img

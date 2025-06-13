@@ -19,7 +19,7 @@ function Cards() {
           githublink=""
           websitelink="https://vedims.com/"
           img={vedims}
-          tech="ReactJs,Firebase"
+          tech="NextJs,NodeJs,firebase"
         />
       </div>
       <div>
