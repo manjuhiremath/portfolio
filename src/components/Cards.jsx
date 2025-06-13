@@ -37,7 +37,7 @@ function Cards() {
           websitelink="https://manjuhiremath.github.io/Task-Tracker/"
           githublink="https://github.com/manjuhiremath/Task-Tracker"
           img={TaskTracker}
-          tech="ReactJs,NodeJs,Express"
+          tech="ReactJs,NodeJs"
         />
       </div>
       <div>
@@ -57,7 +57,7 @@ function Cards() {
         githublink="https://github.com/manjuhiremath/Neuronexa"
         websitelink="https://manjuhiremath.github.io/Neuronexa/"
         img={Foodi}
-        tech="ReactJs,css"
+        tech="ReactJs,css,HTML,Javascript"
       />
     </div>
     {/* <div>
